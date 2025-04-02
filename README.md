@@ -37,19 +37,6 @@ predicted_data_used: Predicted value for the total amount of data used by the cu
 
 numeric_gender: Numeric encoding of the gender (1 for Male, 2 for Female).
 
-age_salary_interaction: Interaction feature between age and estimated salary (age * salary).
-
-age_dependents_interaction: Interaction feature between age and number of dependents (age * dependents).
-
-calls_sms_interaction: Interaction feature between calls made and SMS sent.
-
-log_estimated_salary: Log-transformed value of the estimated salary.
-
-age^2: Squared value of age to capture non-linear relationships.
-
-age estimated_salary: Combined feature of age and estimated salary (age * estimated_salary).
-
-estimated_salary^2: Squared value of the estimated salary to capture non-linear relationships.
 
 Data Cleaning and Preprocessing
 The dataset originally contained negative values in the sms_sent, calls_made, and data_used columns. These negative values were identified as erroneous data. To handle this, the negative values were replaced with NaN values.
